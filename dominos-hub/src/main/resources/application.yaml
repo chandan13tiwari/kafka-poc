@@ -2,5 +2,13 @@ spring:
   application:
     name: kafka-cluster-demo
 
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+
 server:
   port: 8080
