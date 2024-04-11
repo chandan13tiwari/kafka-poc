@@ -5,26 +5,19 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.TopicBuilder;
 
-import static com.poc.kafka.config.Topic.*;
-
 @Configuration
 public class KafkaTopic {
 
     @Bean
-    public NewTopic locationCoordinates() {
-        return TopicBuilder.name(TOPIC_LOCATION.name())
+    public NewTopic customer() {
+        return TopicBuilder.name("customer")
                 .build();
     }
 
     @Bean
-    public NewTopic timeTaken() {
-        return TopicBuilder.name(TOPIC_TIME.name())
+    public NewTopic domino() {
+        return TopicBuilder.name("domino")
                 .build();
     }
 
-    @Bean
-    public NewTopic distanceCovered() {
-        return TopicBuilder.name(TOPIC_DISTANCE.name())
-                .build();
-    }
 }

@@ -5,7 +5,7 @@ spring:
   kafka:
     consumer:
       bootstrap-servers: localhost:9092
-      group-id: myGroup
+      group-id: randomGroupName
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
@@ -13,7 +13,7 @@ spring:
         spring:
           json:
             type:
-              mapping: user:com.poc.kafka.payload.User
+              mapping: user:com.poc.kafka.payload.DeliveryPartnerData
             trusted:
               packages: '*'
 

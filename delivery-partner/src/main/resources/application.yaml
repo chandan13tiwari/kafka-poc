@@ -11,7 +11,7 @@ spring:
         spring:
           json:
             type:
-              mapping: user:com.poc.kafka.payload.User
+              mapping: user:com.poc.kafka.payload.DeliveryPartnerData
 
 server:
   port: 8081
