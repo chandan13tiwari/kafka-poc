@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: kafka-cluster-demo
+
+server:
+  port: 8080
