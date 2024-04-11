@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "bc431734-dc84-4471-ae8c-b44664bdccd4",
+		"name": "kafka-poc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21913219"
+	},
+	"item": [
+		{
+			"name": "kafka-string-pub-con",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/kafka/publish?message=my name is Chandan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"kafka",
+						"publish"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "my name is Chandan"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kafka-json-pub-con",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"firstname\":\"chandan\",\n    \"lastname\":\"tiwari\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/kafka/publish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"kafka",
+						"publish"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
