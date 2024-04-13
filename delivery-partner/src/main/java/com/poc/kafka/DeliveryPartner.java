@@ -26,8 +26,8 @@ public class DeliveryPartner
                 .lastname("Yadav")
                 .distance(1500)
                 .estimatedTime(5)
-                .xCoordinate((int) ((Math.random() * (500 - 10)) + 10))
-                .yCoordinate((int) ((Math.random() * (500 - 10)) + 10))
+                .xCoordinate((int) ((Math.random() * (50 - 10)) + 10))
+                .yCoordinate((int) ((Math.random() * (50 - 10)) + 10))
                 .build();
 
         producer.publishDeliveryPartnerData(deliveryBoy1);

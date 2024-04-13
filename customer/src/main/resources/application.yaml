@@ -13,7 +13,7 @@ spring:
         spring:
           json:
             type:
-              mapping: user:com.poc.kafka.payload.DeliveryPartnerData
+              mapping: user:com.poc.kafka.payload.DeliveryPartnerData, analytics:com.poc.kafka.payload.DeliveryAnalyticsData
             trusted:
               packages: '*'
 

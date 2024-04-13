@@ -20,4 +20,10 @@ public class KafkaTopic {
                 .build();
     }
 
+    @Bean
+    public NewTopic deliveryAnalytics() {
+        return TopicBuilder.name("analytics")
+                .build();
+    }
+
 }
